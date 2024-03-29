@@ -59,13 +59,24 @@ const betweenTwentyAndFourty = (num) => {
 }
 console.log(betweenTwentyAndFourty(19));
 
-// Patrick-problem 8 : triangleArea()
+
+// Patrick-problem 8 : triangleArea();
 const triangleArea = (arg1, arg2) => {
     return (arg1 * arg2) / 2
 }
 console.log(triangleArea(5, 7))    //returns 17.5
 
-// Patrick-problem 10: largest()
+
+// Jahmari-problem 9 : isNegative();
+const isNegative = (num) => {
+    if (num < 0) {
+        return true;
+    } else num > 0;
+    return false;
+};
+console.log(isNegative(4));
+
+// Patrick-problem 10: largest();
 const largest = (arg1, arg2, arg3) => {
     if (arg1 > arg2 && arg1 > arg3) {
         return arg1
@@ -76,3 +87,13 @@ const largest = (arg1, arg2, arg3) => {
     }
 }
 console.log(largest(41, 108, 86))
+
+// Jahmari-bonus 1 : Date();
+const d = new Date();
+const n = d.toLocaleTimeString();
+console.log(n);
+
+const getExtention = (filename) => {
+    return filename.split('.').pop();
+}
+console.log(getExtention("danger.webp"));
