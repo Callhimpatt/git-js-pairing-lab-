@@ -65,4 +65,14 @@ const triangleArea = (arg1, arg2) => {
 }
 console.log(triangleArea(5, 7))    //returns 17.5
 
-
+// Patrick-problem 10: largest()
+const largest = (arg1, arg2, arg3) => {
+    if (arg1 > arg2 && arg1 > arg3) {
+        return arg1
+    } else if (arg2 > arg3) {
+        return arg2
+    } else {
+        return arg3
+    }
+}
+console.log(largest(41, 108, 86))
